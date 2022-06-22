@@ -1,0 +1,26 @@
+<div class="container">
+  <h1> Crear proyecto </h1>
+  <%project = Project.new%>
+  <form method="get" action="/projects/create">
+      Nombre: 
+      <div class="mb-3">
+        
+        <input name="name" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+      </div>
+      Estado: 
+              <select name= "state" class="form-select" aria-label="Default select example">
+                <option selected>Estado</option>
+                <option value="Propuesta">Propuesta</option>
+                <option value="En Proceso">En Proceso</option>
+                <option value="Terminado">Terminado</option>
+              </select>
+      Descripción: 
+      <div class="form-floating">
+        <textarea name="description" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Descripción</label>
+      </div>
+      Comienzo: <input name="starts_on" type="date" class="form-control py-2 border-right-0 border"/>
+      Fin: <input name="ends_on" type="date" class="form-control py-2 border-right-0 border"/>
+      <input type="submit" value="Guardar" class="btn btn-primary my-2">  
+  </form>
+</div>
