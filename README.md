@@ -33,4 +33,4 @@ requerimientos:
   </code>
   <br>
   Asi quedo la aplicación
-  <a>https://cosmixy-blog.herokuapp.com/ </a>
+  <a>https://cosmayx-proyectos.herokuapp.com/ </a>
